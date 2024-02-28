@@ -1,11 +1,11 @@
 export function parose(szam){
     let psE=false;
-    if (!szam.isNan(szam)) {
+    if (typeof szam!=='number') {
         
     return"ez nem szam"
     
     }
-    if (szam.isInteger(szam)) {
+    if (Number.isInteger(szam)) {
         psE=true;
     }
     return psE;
